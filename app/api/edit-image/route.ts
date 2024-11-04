@@ -4,7 +4,7 @@ export const maxDuration = 59;
 export const dynamic = "force-dynamic";
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-export async function POST(req) {
+export async function POST(req: Request) {
   try {
     const { image } = await req.json();
 
